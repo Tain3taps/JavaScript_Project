@@ -1,0 +1,65 @@
+<head>
+    <title>JavaScript Project</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="top-header">
+        <a class="menu-item brand" href="#">JS Project</a>
+        <a class="menu-item" href="#">Home</a>
+        <a class="menu-item" href="#">Contact</a>
+    </header>
+
+    <div class="box">
+        <h1 class="title">BMI Calculate</h1>
+    </div>
+    <div>
+        <h3 class="text">Weight (kg.)</h3>
+        <input type="number" id="inputWeight">
+    </div>
+    <div>
+        <h3>Height (cm.)</h3>
+        <input type="number" id="inputHeight">
+    </div>
+    <div>
+        <h3>BMI : </h3>
+        <p id="result"></p>
+        <button class="btn btn1" onclick="toBMI(document.getElementById('result').innerText)">Calculate</button>
+    </div>
+    <div id="toBMI"></div>
+    <div>
+        <h1>BMR Calculate</h1>
+    </div>
+    <div>
+
+        <input type="radio" name="sex" id="male" value="male">Male</input>
+
+        <input type="radio" name="sex" id="female" value="female">Female</input><br>
+    </div>
+    <div>
+        <h3>Weight (kg.)</h3>
+        <input type="number" id="inputWeight2">
+    </div>
+    <div>
+        <h3>Height (cm.)</h3>
+        <input type="number" id="inputHeight2">
+    </div>
+    <div>
+        <h3>Age </h3>
+        <input type="number" id="inputAge">
+    </div>
+    <div>
+        <h3>BMR : </h3>
+        <p id="result2"></p>
+        <button class="btn btn2" onclick="toBMR(document.getElementById('result2').innerText)">Calculate</button>
+    </div>
+    <div id="toBMR"></div>
+    <script src="app.js"></script>
+
+    <footer class="bottom-footer">
+        <p>About this website</p>
+        <p>Copyright 2030</p>
+    </footer>
+</body>
